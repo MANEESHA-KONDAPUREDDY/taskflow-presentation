@@ -3,31 +3,256 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Slide 10 — Conclusion &amp; Deployment</title>
+<title>TaskFlow — Department Management</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div class="slide-page layout-cover">
-  <div class="bg"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1400&q=80" alt="Server room infrastructure" loading="lazy"></div>
-  <div class="overlay"></div>
-  <div class="content">
-    <div class="tag tag-light">Conclusion</div>
-    <h1 class="hero-title">Secure. Scalable.<br><span class="hl-light">Deployment Ready.</span></h1>
-    <p class="hero-sub">Enterprise-grade security at every layer. Deploy in minutes with Docker and Nginx. Ready for production.</p>
-    <div class="hero-badges">
-      <span class="hero-badge">Rate Limiting</span>
-      <span class="hero-badge">Zod Validation</span>
-      <span class="hero-badge">Helmet Security</span>
-      <span class="hero-badge">Docker + Nginx</span>
-    </div>
-    <div class="stat-row">
-      <div class="stat-card"><div class="num">15+</div><div class="lbl">Features</div></div>
-      <div class="stat-card"><div class="num">60+</div><div class="lbl">API Endpoints</div></div>
-      <div class="stat-card"><div class="num">21</div><div class="lbl">Data Models</div></div>
-      <div class="stat-card"><div class="num">3</div><div class="lbl">User Roles</div></div>
-    </div>
-    <div class="hero-counter">Thank You &middot; Ultra Task Manager (TaskFlow)</div>
+<div class="slide-page layout-mockup">
+
+  <div class="slide-label">
+    <span class="tag tag-red" style="margin:0">ADMIN ONLY</span>
+    <h3>Department Management</h3>
   </div>
+
+  <div class="slide-body">
+  <div class="mockup-frame">
+    <div class="app-shell">
+
+      <!-- Sidebar -->
+      <div class="app-sidebar">
+        <div class="app-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          TaskFlow
+        </div>
+        <div class="nav-group">
+          <div class="nav-label">Main</div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            Dashboard
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            Tasks
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><path d="M9 11l3 3L22 4"/></svg>
+            Approvals
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            Chat
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Mail
+          </div>
+          <div class="nav-label">Admin</div>
+          <div class="nav-item active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+            Departments
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            Users
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            Forms
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            Reports
+          </div>
+        </div>
+        <div class="nav-group" style="margin-top:auto;padding:14px 16px">
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:30px;height:30px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700;color:#fff">SA</div>
+            <div>
+              <div style="font-size:0.72rem;font-weight:600;color:#fff">Super Admin</div>
+              <div style="font-size:0.6rem;color:var(--gray-500)">admin@tms.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Area -->
+      <div style="flex:1;display:flex;flex-direction:column;overflow:hidden">
+
+        <!-- Topbar -->
+        <div class="app-topbar">
+          <div class="page-title">Departments</div>
+          <div class="app-topbar-right">
+            <div class="search-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+              Search...
+            </div>
+            <div class="notif-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+              <span class="badge-dot"></span>
+            </div>
+            <button class="btn btn-primary" style="padding:6px 16px;font-size:0.75rem">+ New Department</button>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="app-main">
+
+          <!-- Department Table -->
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Department</th>
+                <th>HOD</th>
+                <th>Members</th>
+                <th>Tasks</th>
+                <th>Categories</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong style="color:var(--gray-800)">IT</strong></td>
+                <td>
+                  <div class="user-cell"><div class="av" style="background:var(--amber)">AK</div> Anil Kumar</div>
+                </td>
+                <td>12</td>
+                <td>52</td>
+                <td>5</td>
+                <td><span class="badge-lg badge-blue" style="cursor:pointer">View</span></td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--gray-800)">HR</strong></td>
+                <td>
+                  <div class="user-cell"><div class="av" style="background:var(--amber)">PS</div> Priya Sharma</div>
+                </td>
+                <td>8</td>
+                <td>24</td>
+                <td>4</td>
+                <td><span class="badge-lg badge-blue" style="cursor:pointer">View</span></td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--gray-800)">Finance</strong></td>
+                <td>
+                  <div class="user-cell"><div class="av" style="background:var(--amber)">RV</div> Rajesh Verma</div>
+                </td>
+                <td>6</td>
+                <td>18</td>
+                <td>3</td>
+                <td><span class="badge-lg badge-blue" style="cursor:pointer">View</span></td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--gray-800)">Marketing</strong></td>
+                <td>
+                  <div class="user-cell"><div class="av" style="background:var(--amber)">NM</div> Neha Mehta</div>
+                </td>
+                <td>9</td>
+                <td>31</td>
+                <td>4</td>
+                <td><span class="badge-lg badge-blue" style="cursor:pointer">View</span></td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--gray-800)">Sales</strong></td>
+                <td>
+                  <div class="user-cell"><div class="av" style="background:var(--amber)">VG</div> Vikram Gupta</div>
+                </td>
+                <td>11</td>
+                <td>42</td>
+                <td>3</td>
+                <td><span class="badge-lg badge-blue" style="cursor:pointer">View</span></td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--gray-800)">Operations</strong></td>
+                <td>
+                  <div class="user-cell"><div class="av" style="background:var(--amber)">SP</div> Suresh Patel</div>
+                </td>
+                <td>7</td>
+                <td>26</td>
+                <td>3</td>
+                <td><span class="badge-lg badge-blue" style="cursor:pointer">View</span></td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--gray-800)">QA</strong></td>
+                <td>
+                  <div class="user-cell"><div class="av" style="background:var(--amber)">DK</div> Deepa Krishnan</div>
+                </td>
+                <td>5</td>
+                <td>19</td>
+                <td>3</td>
+                <td><span class="badge-lg badge-blue" style="cursor:pointer">View</span></td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--gray-800)">R&amp;D</strong></td>
+                <td>
+                  <div class="user-cell"><div class="av" style="background:var(--amber)">MR</div> Manish Rao</div>
+                </td>
+                <td>10</td>
+                <td>35</td>
+                <td>4</td>
+                <td><span class="badge-lg badge-blue" style="cursor:pointer">View</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- IT Department Detail View -->
+          <div class="form-card" style="margin-top:14px">
+            <div class="form-header">
+              <h4>IT Department &mdash; Detail View</h4>
+            </div>
+            <div class="form-body">
+              <div class="split-view">
+                <!-- Left: Stats -->
+                <div>
+                  <div class="stat-grid" style="grid-template-columns:1fr 1fr;margin-bottom:0">
+                    <div class="stat-box">
+                      <div class="stat-number" style="color:var(--blue)">12</div>
+                      <div class="stat-label">Members</div>
+                    </div>
+                    <div class="stat-box">
+                      <div class="stat-number" style="color:var(--indigo)">52</div>
+                      <div class="stat-label">Tasks</div>
+                    </div>
+                    <div class="stat-box">
+                      <div class="stat-number" style="color:var(--amber)">5</div>
+                      <div class="stat-label">Categories</div>
+                    </div>
+                    <div class="stat-box">
+                      <div class="stat-number" style="color:var(--green)">68%</div>
+                      <div class="stat-label">Completion</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Right: Task Categories -->
+                <div>
+                  <div class="section-label" style="margin-top:0">Task Categories</div>
+                  <div class="tech-list">
+                    <div class="tech-pill"><div class="tech-dot" style="background:var(--red)"></div><span>Bug Fix</span></div>
+                    <div class="tech-pill"><div class="tech-dot" style="background:var(--blue)"></div><span>Feature Dev</span></div>
+                    <div class="tech-pill"><div class="tech-dot" style="background:var(--amber)"></div><span>Documentation</span></div>
+                    <div class="tech-pill"><div class="tech-dot" style="background:var(--green)"></div><span>Security Patch</span></div>
+                    <div class="tech-pill"><div class="tech-dot" style="background:var(--purple)"></div><span>Code Review</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="content-panel">
+      <h4>Organizational Structure</h4>
+      <p class="content-desc">The Department Management module is a Super Admin exclusive feature. Create and configure departments, assign Heads of Department, define task categories, and monitor department-level statistics including member counts and completion rates.</p>
+      <ul class="slide-highlights">
+        <li>Create and manage departments with HOD assignment</li>
+        <li>Define task categories per department</li>
+        <li>View member count, task stats, and completion rates</li>
+        <li>Super Admin exclusive &mdash; restricted from others</li>
+        <li>Department detail view with category breakdown</li>
+      </ul>
+    </div>
+  </div>
+
 </div>
 
 <nav class="page-nav">
@@ -35,20 +260,11 @@
     <a href="slide9.html" class="nav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M15 18l-6-6 6-6"/></svg> <span class="label-text">Prev</span></a>
   </div>
   <div class="nav-dots">
-    <a href="slide1.html" class="nav-dot"></a>
-    <a href="slide2.html" class="nav-dot"></a>
-    <a href="slide3.html" class="nav-dot"></a>
-    <a href="slide4.html" class="nav-dot"></a>
-    <a href="slide5.html" class="nav-dot"></a>
-    <a href="slide6.html" class="nav-dot"></a>
-    <a href="slide7.html" class="nav-dot"></a>
-    <a href="slide8.html" class="nav-dot"></a>
-    <a href="slide9.html" class="nav-dot"></a>
-    <a href="slide10.html" class="nav-dot on"></a>
+    <a href="slide1.html" class="nav-dot"></a><a href="slide2.html" class="nav-dot"></a><a href="slide3.html" class="nav-dot"></a><a href="slide4.html" class="nav-dot"></a><a href="slide5.html" class="nav-dot"></a><a href="slide6.html" class="nav-dot"></a><a href="slide7.html" class="nav-dot"></a><a href="slide8.html" class="nav-dot"></a><a href="slide9.html" class="nav-dot"></a><a href="slide10.html" class="nav-dot on"></a><a href="slide11.html" class="nav-dot"></a><a href="slide12.html" class="nav-dot"></a><a href="slide13.html" class="nav-dot"></a><a href="slide14.html" class="nav-dot"></a><a href="slide15.html" class="nav-dot"></a><a href="slide16.html" class="nav-dot"></a>
   </div>
   <div class="nav-side" style="justify-content:flex-end">
-    <span class="slide-num">10 / 10</span>
-    <a href="index.html" class="nav-btn primary"><span class="label-text">Home</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M9 18l6-6-6-6"/></svg></a>
+    <span class="slide-num">10 / 16</span>
+    <a href="slide11.html" class="nav-btn primary"><span class="label-text">Next</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M9 18l6-6-6-6"/></svg></a>
   </div>
 </nav>
 </body>

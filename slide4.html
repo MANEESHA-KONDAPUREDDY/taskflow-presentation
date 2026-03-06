@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slide 4 — RBAC Architecture</title>
-  <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TaskFlow — RBAC Architecture</title>
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <div class="slide-page layout-split">
@@ -13,35 +13,24 @@
   </div>
   <div class="text-panel">
     <span class="tag">Access Control</span>
-    <h1>Organizational <span class="hl">Architecture (RBAC)</span></h1>
-    <p class="subtitle">Three-tier role hierarchy with strict department-level data isolation.</p>
-
+    <h1 class="slide-title">Organizational <span class="hl">Architecture (RBAC)</span></h1>
+    <p class="slide-sub">Three-tier role hierarchy with strict department-level data isolation.</p>
     <div class="role-stack">
       <div class="role">
-        <div class="role-dot" style="background:var(--blue)">SA</div>
-        <div>
-          <h4>Super Admin</h4>
-          <p>Global control over departments, users, categories, and system settings</p>
-        </div>
+        <div class="role-dot" style="background:var(--red)">SA</div>
+        <div><h4>Super Admin</h4><p>Global control over departments, users, categories, and system settings</p></div>
       </div>
       <div class="role-arrow">&#8595;</div>
       <div class="role">
-        <div class="role-dot" style="background:var(--indigo)">HD</div>
-        <div>
-          <h4>HOD (Head of Department)</h4>
-          <p>Scoped management of department tasks, users, approvals, and forms</p>
-        </div>
+        <div class="role-dot" style="background:var(--amber)">HD</div>
+        <div><h4>HOD (Head of Department)</h4><p>Scoped management of department tasks, users, approvals, and forms</p></div>
       </div>
       <div class="role-arrow">&#8595;</div>
       <div class="role">
         <div class="role-dot" style="background:var(--green)">TM</div>
-        <div>
-          <h4>Team Member</h4>
-          <p>Works on assigned tasks, personal Self Tasks, progress updates, and chat</p>
-        </div>
+        <div><h4>Team Member</h4><p>Works on assigned tasks, personal Self Tasks, progress updates, and chat</p></div>
       </div>
     </div>
-
     <div class="info-box">
       <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Department Isolation: Data is strictly scoped — no cross-department data leaks</p>
     </div>
@@ -53,19 +42,10 @@
     <a href="slide3.html" class="nav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M15 18l-6-6 6-6"/></svg> <span class="label-text">Prev</span></a>
   </div>
   <div class="nav-dots">
-    <a href="slide1.html" class="nav-dot"></a>
-    <a href="slide2.html" class="nav-dot"></a>
-    <a href="slide3.html" class="nav-dot"></a>
-    <a href="slide4.html" class="nav-dot on"></a>
-    <a href="slide5.html" class="nav-dot"></a>
-    <a href="slide6.html" class="nav-dot"></a>
-    <a href="slide7.html" class="nav-dot"></a>
-    <a href="slide8.html" class="nav-dot"></a>
-    <a href="slide9.html" class="nav-dot"></a>
-    <a href="slide10.html" class="nav-dot"></a>
+    <a href="slide1.html" class="nav-dot"></a><a href="slide2.html" class="nav-dot"></a><a href="slide3.html" class="nav-dot"></a><a href="slide4.html" class="nav-dot on"></a><a href="slide5.html" class="nav-dot"></a><a href="slide6.html" class="nav-dot"></a><a href="slide7.html" class="nav-dot"></a><a href="slide8.html" class="nav-dot"></a><a href="slide9.html" class="nav-dot"></a><a href="slide10.html" class="nav-dot"></a><a href="slide11.html" class="nav-dot"></a><a href="slide12.html" class="nav-dot"></a><a href="slide13.html" class="nav-dot"></a><a href="slide14.html" class="nav-dot"></a><a href="slide15.html" class="nav-dot"></a><a href="slide16.html" class="nav-dot"></a>
   </div>
   <div class="nav-side" style="justify-content:flex-end">
-    <span class="slide-num">4 / 10</span>
+    <span class="slide-num">4 / 16</span>
     <a href="slide5.html" class="nav-btn primary"><span class="label-text">Next</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M9 18l6-6-6-6"/></svg></a>
   </div>
 </nav>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TaskFlow — Approval Workflows</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="slide-page layout-mockup">
+
+  <div class="slide-label">
+    <span class="tag" style="margin:0">APPROVALS</span>
+    <h3>Multi-Level Approval Workflows</h3>
+  </div>
+
+  <div class="slide-body">
+  <div class="mockup-frame">
+    <div class="app-shell">
+
+      <!-- Sidebar -->
+      <div class="app-sidebar">
+        <div class="app-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          TaskFlow
+        </div>
+        <div class="nav-group">
+          <div class="nav-label">Main</div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            Dashboard
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            Tasks
+          </div>
+          <div class="nav-item active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><path d="M9 11l3 3L22 4"/></svg>
+            Approvals
+            <span class="nav-badge">5</span>
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            Chat
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Mail
+          </div>
+          <div class="nav-label">Admin</div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+            Departments
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            Users
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            Reports
+          </div>
+        </div>
+        <div class="nav-group" style="margin-top:auto;padding:14px 16px">
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:30px;height:30px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700;color:#fff">HD</div>
+            <div>
+              <div style="font-size:0.72rem;font-weight:600;color:#fff">IT HOD</div>
+              <div style="font-size:0.6rem;color:var(--gray-500)">it.hod@tms.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Area -->
+      <div style="flex:1;display:flex;flex-direction:column;overflow:hidden">
+
+        <!-- Topbar -->
+        <div class="app-topbar">
+          <div class="page-title">
+            Approvals
+          </div>
+          <div class="app-topbar-right">
+            <span class="badge-lg badge-blue">Task Approvals (5)</span>
+            <span class="badge-lg badge-amber">Pending Registrations (2)</span>
+            <div class="search-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+              Search...
+            </div>
+            <div class="notif-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+              <span class="badge-dot"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="app-main">
+
+          <!-- Approval Card 1 -->
+          <div class="approval-card">
+            <div class="task-info">
+              <h5>Fix Authentication Token Bug</h5>
+              <p>Submitted for Level 1 review</p>
+              <div class="submitter">
+                <div style="width:20px;height:20px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-size:0.5rem;font-weight:700;color:#fff">TM</div>
+                IT Member 2 &middot; Mar 6, 10:30 AM
+              </div>
+            </div>
+            <div class="approval-actions">
+              <button class="btn-sm btn-success">Approve</button>
+              <button class="btn-sm btn-danger">Reject</button>
+              <button class="btn-sm btn-outline" style="border:1px solid var(--gray-200)">Send Back</button>
+            </div>
+          </div>
+
+          <!-- Approval Card 2 -->
+          <div class="approval-card">
+            <div class="task-info">
+              <h5>Update API Documentation</h5>
+              <p>Submitted for Level 1 review</p>
+              <div class="submitter">
+                <div style="width:20px;height:20px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-size:0.5rem;font-weight:700;color:#fff">TM</div>
+                IT Member 1 &middot; Mar 5, 03:15 PM
+              </div>
+            </div>
+            <div class="approval-actions">
+              <button class="btn-sm btn-success">Approve</button>
+              <button class="btn-sm btn-danger">Reject</button>
+              <button class="btn-sm btn-outline" style="border:1px solid var(--gray-200)">Send Back</button>
+            </div>
+          </div>
+
+          <!-- Approval Card 3 -->
+          <div class="approval-card">
+            <div class="task-info">
+              <h5>Database Migration Plan</h5>
+              <p>Level 1 approved &mdash; Awaiting Level 2</p>
+              <div class="submitter">
+                <div style="width:20px;height:20px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-size:0.5rem;font-weight:700;color:#fff">TM</div>
+                IT Member 3 &middot; Mar 4, 11:00 AM
+                <span class="badge-lg badge-green" style="margin-left:8px">L1 Approved</span>
+              </div>
+            </div>
+            <div class="approval-actions">
+              <button class="btn-sm btn-success">Approve</button>
+              <button class="btn-sm btn-danger">Reject</button>
+              <button class="btn-sm btn-outline" style="border:1px solid var(--gray-200)">Send Back</button>
+            </div>
+          </div>
+
+          <!-- Approval Flow Visualization -->
+          <div class="flow" style="margin-top:18px">
+            <div class="flow-step">Submitted</div>
+            <span class="flow-arr">&#8594;</span>
+            <div class="flow-step active">Level 1 (HOD)</div>
+            <span class="flow-arr">&#8594;</span>
+            <div class="flow-step">Level 2 (Admin)</div>
+            <span class="flow-arr">&#8594;</span>
+            <div class="flow-step green">Approved</div>
+          </div>
+
+          <!-- SLA Info Box -->
+          <div class="info-box amber">
+            <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> SLA Tracking: 48-hour response window per level. Overdue alerts triggered automatically.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="content-panel">
+      <h4>Structured Approval Pipeline</h4>
+      <p class="content-desc">Tasks flow through a multi-level approval pipeline &mdash; first reviewed by the HOD (Level 1), then escalated to the Super Admin (Level 2). Each level can approve, reject, or send back with comments. A 48-hour SLA ensures timely responses.</p>
+      <ul class="slide-highlights">
+        <li>Multi-level flow: HOD then Super Admin</li>
+        <li>Approve, reject, or send back with comments</li>
+        <li>48-hour SLA tracking with auto-alerts</li>
+        <li>Pending registration approval for new users</li>
+        <li>Visual approval flow status indicator</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<nav class="page-nav">
+  <div class="nav-side">
+    <a href="slide10.html" class="nav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M15 18l-6-6 6-6"/></svg> <span class="label-text">Prev</span></a>
+  </div>
+  <div class="nav-dots">
+    <a href="slide1.html" class="nav-dot"></a><a href="slide2.html" class="nav-dot"></a><a href="slide3.html" class="nav-dot"></a><a href="slide4.html" class="nav-dot"></a><a href="slide5.html" class="nav-dot"></a><a href="slide6.html" class="nav-dot"></a><a href="slide7.html" class="nav-dot"></a><a href="slide8.html" class="nav-dot"></a><a href="slide9.html" class="nav-dot"></a><a href="slide10.html" class="nav-dot"></a><a href="slide11.html" class="nav-dot on"></a><a href="slide12.html" class="nav-dot"></a><a href="slide13.html" class="nav-dot"></a><a href="slide14.html" class="nav-dot"></a><a href="slide15.html" class="nav-dot"></a><a href="slide16.html" class="nav-dot"></a>
+  </div>
+  <div class="nav-side" style="justify-content:flex-end">
+    <span class="slide-num">11 / 16</span>
+    <a href="slide12.html" class="nav-btn primary"><span class="label-text">Next</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M9 18l6-6-6-6"/></svg></a>
+  </div>
+</nav>
+</body>
+</html>

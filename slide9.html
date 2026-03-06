@@ -3,46 +3,175 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Slide 9 — Reports &amp; Audit Trails</title>
+<title>TaskFlow — Progress Tracking &amp; Updates</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div class="slide-page layout-split">
-  <div class="text-panel">
-    <div class="tag">Analytics</div>
-    <h2 class="slide-title">Reports &amp; <span class="hl">Audit Trails</span></h2>
-    <p class="slide-sub">Real-time dashboards, performance analytics, and comprehensive audit logging for full accountability.</p>
+<div class="slide-page layout-mockup">
 
-    <div class="card-grid g3">
-      <div class="card">
-        <div class="card-icon ico-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div>
-        <h4>Dashboard</h4>
-        <p>Real-time stats on completion rates, overdue tasks, and team performance</p>
+  <div class="slide-label">
+    <span class="tag" style="margin:0">PROGRESS TRACKING</span>
+    <h3>Task Progress &amp; Updates</h3>
+  </div>
+
+  <div class="slide-body">
+  <div class="mockup-frame">
+    <div class="app-shell">
+
+      <!-- Sidebar -->
+      <div class="app-sidebar">
+        <div class="app-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          TaskFlow
+        </div>
+        <div class="nav-group">
+          <div class="nav-label">Main</div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            Dashboard
+          </div>
+          <div class="nav-item active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            Tasks
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            Chat
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Mail
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/></svg>
+            Profile
+          </div>
+        </div>
+        <div class="nav-group" style="margin-top:auto;padding:14px 16px">
+          <div style="display:flex;align-items:center;gap:8px">
+            <div class="user-avatar" style="width:30px;height:30px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700;color:#fff">TM</div>
+            <div>
+              <div style="font-size:0.72rem;font-weight:600;color:#fff">IT Member 1</div>
+              <div style="font-size:0.6rem;color:var(--gray-500)">it.member1@tms.com</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <div class="card-icon ico-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
-        <h4>Performance Analytics</h4>
-        <p>User-specific metrics like "Avg Completion Time" and task throughput</p>
-      </div>
-      <div class="card">
-        <div class="card-icon ico-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8M16 17H8M10 9H8"/></svg></div>
-        <h4>Audit Logging</h4>
-        <p>Every critical action timestamped and logged for full accountability</p>
+
+      <!-- Main Area -->
+      <div style="flex:1;display:flex;flex-direction:column;overflow:hidden">
+
+        <!-- Topbar -->
+        <div class="app-topbar">
+          <div class="page-title">
+            Fix Authentication Token Bug
+            <span class="badge-lg badge-red">Critical</span>
+          </div>
+          <div class="app-topbar-right">
+            <div class="search-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+              Search...
+            </div>
+            <div class="notif-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+              <span class="badge-dot"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="app-main">
+          <div class="split-view">
+
+            <!-- LEFT: Update Progress -->
+            <div class="progress-card">
+              <h4>Update Progress</h4>
+
+              <div class="slider-track">
+                <div class="slider-fill" style="width:70%;background:var(--blue)" data-val="70%">
+                  <div class="slider-thumb"></div>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-top:16px">
+                <label>Progress Description</label>
+                <textarea class="form-input filled" style="height:60px;resize:none">Fixed the JWT refresh token logic. Testing edge cases for concurrent sessions.</textarea>
+              </div>
+
+              <div class="section-label" style="margin-top:14px">Attach Proof Files</div>
+
+              <div class="upload-area">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                <p>Drop files here or click to upload</p>
+                <div class="upload-hint">PNG, PDF, ZIP up to 10MB</div>
+              </div>
+
+              <div class="file-list">
+                <div class="file-item">
+                  <div style="display:flex;align-items:center">
+                    <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+                    fix-commit.png
+                  </div>
+                  <span class="file-size">856 KB</span>
+                </div>
+                <div class="file-item">
+                  <div style="display:flex;align-items:center">
+                    <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+                    test-results.pdf
+                  </div>
+                  <span class="file-size">1.2 MB</span>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-outline">Save Draft</button>
+                <button class="btn btn-primary">Submit Update</button>
+              </div>
+            </div>
+
+            <!-- RIGHT: Progress Timeline -->
+            <div class="progress-card">
+              <h4>Progress Timeline</h4>
+
+              <div class="progress-timeline">
+                <div class="timeline-item">
+                  <div class="tl-time">Mar 6</div>
+                  <div class="tl-content">Progress updated to <strong>70%</strong> &mdash; Fixed JWT refresh logic, testing edge cases</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="tl-time">Mar 4</div>
+                  <div class="tl-content">Progress updated to <strong>40%</strong> &mdash; Identified root cause in token rotation</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="tl-time">Mar 3</div>
+                  <div class="tl-content">Progress updated to <strong>15%</strong> &mdash; Started investigation, reproduced the bug</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="tl-time">Mar 1</div>
+                  <div class="tl-content">Task assigned by <strong>IT HOD</strong> &mdash; Priority: Critical</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
-
-    <div class="section-label" style="margin-top:18px">What Gets Tracked</div>
-    <div class="tech-list">
-      <span class="pill"><span class="dot blue"></span>Task Changes</span>
-      <span class="pill"><span class="dot green"></span>Approvals</span>
-      <span class="pill"><span class="dot purple"></span>User Actions</span>
-      <span class="pill"><span class="dot amber"></span>Timestamps</span>
-      <span class="pill"><span class="dot red"></span>JSON Details</span>
+  </div>
+    <div class="content-panel">
+      <h4>Real-Time Progress Tracking</h4>
+      <p class="content-desc">Team members submit incremental progress updates using a visual slider (0-100%). Each update includes a description and optional proof files, creating a complete audit trail. Drafts can be saved before final submission.</p>
+      <ul class="slide-highlights">
+        <li>Slider-based progress from 0% to 100%</li>
+        <li>Attach proof files with each update</li>
+        <li>Full timeline history of all changes</li>
+        <li>Save drafts before final submission</li>
+        <li>Timestamped entries for accountability</li>
+      </ul>
     </div>
   </div>
-  <div class="img-panel">
-    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80" alt="Analytics dashboard" loading="lazy">
-  </div>
+
 </div>
 
 <nav class="page-nav">
@@ -50,19 +179,10 @@
     <a href="slide8.html" class="nav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M15 18l-6-6 6-6"/></svg> <span class="label-text">Prev</span></a>
   </div>
   <div class="nav-dots">
-    <a href="slide1.html" class="nav-dot"></a>
-    <a href="slide2.html" class="nav-dot"></a>
-    <a href="slide3.html" class="nav-dot"></a>
-    <a href="slide4.html" class="nav-dot"></a>
-    <a href="slide5.html" class="nav-dot"></a>
-    <a href="slide6.html" class="nav-dot"></a>
-    <a href="slide7.html" class="nav-dot"></a>
-    <a href="slide8.html" class="nav-dot"></a>
-    <a href="slide9.html" class="nav-dot on"></a>
-    <a href="slide10.html" class="nav-dot"></a>
+    <a href="slide1.html" class="nav-dot"></a><a href="slide2.html" class="nav-dot"></a><a href="slide3.html" class="nav-dot"></a><a href="slide4.html" class="nav-dot"></a><a href="slide5.html" class="nav-dot"></a><a href="slide6.html" class="nav-dot"></a><a href="slide7.html" class="nav-dot"></a><a href="slide8.html" class="nav-dot"></a><a href="slide9.html" class="nav-dot on"></a><a href="slide10.html" class="nav-dot"></a><a href="slide11.html" class="nav-dot"></a><a href="slide12.html" class="nav-dot"></a><a href="slide13.html" class="nav-dot"></a><a href="slide14.html" class="nav-dot"></a><a href="slide15.html" class="nav-dot"></a><a href="slide16.html" class="nav-dot"></a>
   </div>
   <div class="nav-side" style="justify-content:flex-end">
-    <span class="slide-num">9 / 10</span>
+    <span class="slide-num">9 / 16</span>
     <a href="slide10.html" class="nav-btn primary"><span class="label-text">Next</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M9 18l6-6-6-6"/></svg></a>
   </div>
 </nav>

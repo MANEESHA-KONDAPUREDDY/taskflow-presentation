@@ -1,41 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slide 5 - Task Management &amp; Lifecycle</title>
-  <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TaskFlow — Super Admin Dashboard</title>
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div class="slide-page layout-split">
-  <div class="text-panel">
-    <div class="tag">Core Feature</div>
-    <h2 class="slide-title">Task Management <span class="hl">&amp; Lifecycle</span></h2>
-    <p class="slide-sub">Comprehensive task system with priorities, categories, attachments, and detailed progress tracking.</p>
-
-    <div class="section-label">Task Features</div>
-    <ul class="checklist">
-      <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span> Priority levels: Low, Medium, High, Critical</li>
-      <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span> Categories, file attachments, multiple assignees</li>
-      <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span> Self-assigned tasks for personal work management</li>
-    </ul>
-
-    <div class="section-label" style="margin-top:18px">The Lifecycle</div>
-    <div class="flow">
-      <div class="flow-step">NOT STARTED</div>
-      <span class="flow-arr">&#8594;</span>
-      <div class="flow-step active">IN PROGRESS</div>
-      <span class="flow-arr">&#8594;</span>
-      <div class="flow-step">REVIEW</div>
-      <span class="flow-arr">&#8594;</span>
-      <div class="flow-step active">COMPLETED</div>
-    </div>
-
-    <div class="section-label" style="margin-top:18px">Progress Tracking</div>
-    <p style="font-size:0.82rem;color:var(--gray-500);line-height:1.6">Assignees provide slider updates (0–100%) with descriptions and file proofs attached to each update.</p>
+<div class="slide-page layout-mockup">
+  <div class="slide-label">
+    <span class="tag tag-red">SUPER ADMIN</span>
+    <h3>Super Admin Dashboard</h3>
   </div>
-  <div class="img-panel">
-    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=900&q=80" alt="Task board with sticky notes" loading="lazy">
+  <div class="slide-body">
+  <div class="mockup-frame">
+    <div class="app-shell">
+      <!-- Sidebar -->
+      <div class="app-sidebar">
+        <div class="app-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          TaskFlow
+        </div>
+        <div class="nav-group">
+          <div class="nav-label">Main</div>
+          <div class="nav-item active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            Dashboard
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            Tasks
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><path d="M9 11l3 3L22 4"/></svg>
+            Approvals
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            Chat
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Mail
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-label">Admin</div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            Users
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+            Departments
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            Forms
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            Reports
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-label">Account</div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/></svg>
+            Profile
+          </div>
+        </div>
+        <div style="margin-top:auto;padding:12px 16px;border-top:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;gap:8px">
+          <div style="width:30px;height:30px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:700;color:#fff">SA</div>
+          <div>
+            <div style="font-size:0.72rem;font-weight:600;color:#fff">Super Admin</div>
+            <div style="font-size:0.6rem;color:var(--gray-500)">admin@tms.com</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Area -->
+      <div style="flex:1;display:flex;flex-direction:column;overflow:hidden">
+        <!-- Topbar -->
+        <div class="app-topbar">
+          <div class="page-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            Dashboard
+          </div>
+          <div class="app-topbar-right">
+            <div class="search-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+              Search...
+            </div>
+            <div class="notif-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+              <span class="badge-dot"></span>
+            </div>
+            <div class="user-info">
+              <div class="user-avatar" style="background:var(--red)">SA</div>
+              <div>
+                <div class="user-name">Super Admin</div>
+                <div class="user-role">Super Admin</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="app-main">
+          <!-- Stat Boxes -->
+          <div class="stat-grid">
+            <div class="stat-box">
+              <div class="stat-icon" style="background:var(--blue-50);color:var(--blue)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <div class="stat-number">247</div>
+              <div class="stat-label">Total Tasks</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-icon" style="background:#fffbeb;color:var(--amber)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </div>
+              <div class="stat-number">89</div>
+              <div class="stat-label">In Progress</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-icon" style="background:#fef2f2;color:var(--red)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+              </div>
+              <div class="stat-number">18</div>
+              <div class="stat-label">Overdue</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-icon" style="background:var(--green-50);color:var(--green)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+              </div>
+              <div class="stat-number">73%</div>
+              <div class="stat-label">Completion Rate</div>
+            </div>
+          </div>
+
+          <!-- Charts Row -->
+          <div class="chart-row">
+            <!-- Bar Chart -->
+            <div class="chart-card">
+              <h4>Task Distribution by Department</h4>
+              <div class="bar-chart-lg">
+                <div class="bar-group">
+                  <div class="bar-fill" style="height:75%;background:var(--blue)"></div>
+                  <div class="bar-label">IT</div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar-fill" style="height:50%;background:var(--indigo)"></div>
+                  <div class="bar-label">HR</div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar-fill" style="height:85%;background:var(--green)"></div>
+                  <div class="bar-label">Finance</div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar-fill" style="height:40%;background:var(--amber)"></div>
+                  <div class="bar-label">Marketing</div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar-fill" style="height:60%;background:var(--purple)"></div>
+                  <div class="bar-label">Sales</div>
+                </div>
+                <div class="bar-group">
+                  <div class="bar-fill" style="height:55%;background:var(--red)"></div>
+                  <div class="bar-label">Ops</div>
+                </div>
+              </div>
+            </div>
+            <!-- Donut Chart -->
+            <div class="chart-card">
+              <h4>Status Overview</h4>
+              <div style="display:flex;align-items:center;justify-content:center;gap:16px;padding:10px 0">
+                <div class="donut-lg" style="background:conic-gradient(var(--blue) 0% 35%, var(--green) 35% 63%, var(--amber) 63% 83%, var(--red) 83% 90%, var(--gray-300) 90% 100%)">
+                  <div class="donut-inner">
+                    <div class="val">247</div>
+                    <div class="lbl">Tasks</div>
+                  </div>
+                </div>
+                <div class="legend">
+                  <div class="legend-item"><div class="legend-dot" style="background:var(--blue)"></div> Completed 35%</div>
+                  <div class="legend-item"><div class="legend-dot" style="background:var(--green)"></div> In Progress 28%</div>
+                  <div class="legend-item"><div class="legend-dot" style="background:var(--amber)"></div> Pending 20%</div>
+                  <div class="legend-item"><div class="legend-dot" style="background:var(--red)"></div> Overdue 7%</div>
+                  <div class="legend-item"><div class="legend-dot" style="background:var(--gray-300)"></div> Not Started 10%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Activity Table -->
+          <div style="background:#fff;border-radius:10px;border:1px solid var(--gray-200);overflow:hidden">
+            <div style="padding:14px 18px;border-bottom:1px solid var(--gray-200)">
+              <h4 style="font-size:0.82rem;font-weight:700;color:var(--gray-800)">Recent Activity</h4>
+            </div>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Activity</th>
+                  <th>User</th>
+                  <th>Department</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Completed task "Deploy API v2.1"</td>
+                  <td><div class="user-cell"><div class="av" style="background:var(--blue)">AM</div> Ahmed M.</div></td>
+                  <td><span class="badge badge-blue">IT</span></td>
+                  <td>5 min ago</td>
+                </tr>
+                <tr>
+                  <td>Submitted approval for "Budget Report Q1"</td>
+                  <td><div class="user-cell"><div class="av" style="background:var(--green)">SK</div> Sara K.</div></td>
+                  <td><span class="badge badge-green">Finance</span></td>
+                  <td>18 min ago</td>
+                </tr>
+                <tr>
+                  <td>Created new task "Onboarding Process Review"</td>
+                  <td><div class="user-cell"><div class="av" style="background:var(--amber)">NR</div> Nadia R.</div></td>
+                  <td><span class="badge badge-amber">HR</span></td>
+                  <td>42 min ago</td>
+                </tr>
+                <tr>
+                  <td>Updated progress on "Social Media Campaign"</td>
+                  <td><div class="user-cell"><div class="av" style="background:var(--purple)">OF</div> Omar F.</div></td>
+                  <td><span class="badge badge-purple">Marketing</span></td>
+                  <td>1 hr ago</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="content-panel">
+      <h4>Global Command Center</h4>
+      <p class="content-desc">The Super Admin Dashboard provides full organizational visibility across all departments, users, and tasks. Monitor real-time metrics, track overdue items, and review activity feeds from a single unified control panel.</p>
+      <ul class="slide-highlights">
+        <li>Full visibility across all 8+ departments</li>
+        <li>Real-time task stats and overdue alerts</li>
+        <li>Activity feed with user actions and timestamps</li>
+        <li>Manage users, departments, and system settings</li>
+        <li>Organization-wide completion rate tracking</li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -44,19 +258,10 @@
     <a href="slide4.html" class="nav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M15 18l-6-6 6-6"/></svg> <span class="label-text">Prev</span></a>
   </div>
   <div class="nav-dots">
-    <a href="slide1.html" class="nav-dot"></a>
-    <a href="slide2.html" class="nav-dot"></a>
-    <a href="slide3.html" class="nav-dot"></a>
-    <a href="slide4.html" class="nav-dot"></a>
-    <a href="slide5.html" class="nav-dot on"></a>
-    <a href="slide6.html" class="nav-dot"></a>
-    <a href="slide7.html" class="nav-dot"></a>
-    <a href="slide8.html" class="nav-dot"></a>
-    <a href="slide9.html" class="nav-dot"></a>
-    <a href="slide10.html" class="nav-dot"></a>
+    <a href="slide1.html" class="nav-dot"></a><a href="slide2.html" class="nav-dot"></a><a href="slide3.html" class="nav-dot"></a><a href="slide4.html" class="nav-dot"></a><a href="slide5.html" class="nav-dot on"></a><a href="slide6.html" class="nav-dot"></a><a href="slide7.html" class="nav-dot"></a><a href="slide8.html" class="nav-dot"></a><a href="slide9.html" class="nav-dot"></a><a href="slide10.html" class="nav-dot"></a><a href="slide11.html" class="nav-dot"></a><a href="slide12.html" class="nav-dot"></a><a href="slide13.html" class="nav-dot"></a><a href="slide14.html" class="nav-dot"></a><a href="slide15.html" class="nav-dot"></a><a href="slide16.html" class="nav-dot"></a>
   </div>
   <div class="nav-side" style="justify-content:flex-end">
-    <span class="slide-num">5 / 10</span>
+    <span class="slide-num">5 / 16</span>
     <a href="slide6.html" class="nav-btn primary"><span class="label-text">Next</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M9 18l6-6-6-6"/></svg></a>
   </div>
 </nav>

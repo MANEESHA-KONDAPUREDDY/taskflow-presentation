@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TaskFlow — File Uploads &amp; Dynamic Forms</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="slide-page layout-mockup">
+  <div class="slide-label">
+    <span class="tag tag-amber">DATA COLLECTION</span>
+    <h3>File Uploads &amp; Dynamic Forms</h3>
+  </div>
+  <div class="slide-body">
+  <div class="mockup-frame">
+    <div class="app-shell">
+      <!-- Sidebar -->
+      <div class="app-sidebar">
+        <div class="app-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          TaskFlow
+        </div>
+        <div class="nav-group">
+          <div class="nav-label">Main</div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            Dashboard
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            My Tasks
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><path d="M9 11l3 3L22 4"/></svg>
+            Approvals
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            Chat
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Mail
+          </div>
+          <div class="nav-item active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+            Forms
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            Users
+          </div>
+          <div class="nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            Reports
+          </div>
+        </div>
+        <div style="margin-top:auto;padding:12px 16px;border-top:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;gap:8px">
+          <div style="width:28px;height:28px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:700;color:#fff">HD</div>
+          <div>
+            <div style="font-size:0.72rem;font-weight:600;color:#fff">IT HOD</div>
+            <div style="font-size:0.58rem;color:var(--gray-500)">Head of Dept</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Area -->
+      <div style="flex:1;display:flex;flex-direction:column;overflow:hidden">
+        <!-- Topbar -->
+        <div class="app-topbar">
+          <div class="page-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+            Dynamic Form Builder
+          </div>
+          <div class="app-topbar-right">
+            <div class="btn btn-primary" style="padding:6px 16px;font-size:0.75rem">+ Create Form</div>
+            <div class="search-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+              Search forms...
+            </div>
+            <div class="notif-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+              <span class="badge-dot"></span>
+            </div>
+            <div class="user-info">
+              <div class="user-avatar" style="background:var(--amber)">HD</div>
+              <div>
+                <div class="user-name">IT HOD</div>
+                <div class="user-role">Head of Dept</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="app-main" style="padding:16px 20px">
+          <div class="split-view">
+            <!-- LEFT: Form Builder -->
+            <div class="form-card">
+              <div class="form-header">
+                <h4>Form Builder &mdash; Sprint Retrospective</h4>
+                <span class="badge-lg badge-green">Published</span>
+              </div>
+              <div class="form-body">
+                <!-- Field: Sprint Number -->
+                <div class="form-group" style="margin-bottom:12px">
+                  <label>Sprint Number</label>
+                  <div class="form-input filled">Sprint 5</div>
+                </div>
+                <!-- Field: What went well -->
+                <div class="form-group" style="margin-bottom:12px">
+                  <label>What went well?</label>
+                  <textarea class="form-input" style="height:44px;resize:none" readonly></textarea>
+                </div>
+                <!-- Field: Areas for improvement -->
+                <div class="form-group" style="margin-bottom:12px">
+                  <label>Areas for improvement</label>
+                  <textarea class="form-input" style="height:44px;resize:none" readonly></textarea>
+                </div>
+                <!-- Field: Team Rating -->
+                <div class="form-group" style="margin-bottom:12px">
+                  <label>Team Rating</label>
+                  <select class="form-input">
+                    <option>Select rating (1-10)</option>
+                  </select>
+                </div>
+                <!-- Field: Attachments -->
+                <div class="form-group" style="margin-bottom:12px">
+                  <label>Attachments</label>
+                  <div class="upload-area" style="padding:10px;margin:4px 0">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" style="margin:0 auto 4px"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                    <p style="font-size:0.68rem">Drop files or click to upload</p>
+                  </div>
+                  <div class="file-list">
+                    <div class="file-item">
+                      <div style="display:flex;align-items:center">
+                        <span class="file-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+                        retrospective-notes.docx
+                      </div>
+                      <span class="file-size">340 KB</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Field: Categories -->
+                <div class="form-group" style="margin-bottom:12px">
+                  <label>Categories</label>
+                  <div class="multi-select">
+                    <span class="chip">Performance <span class="x">&times;</span></span>
+                    <span class="chip">Process <span class="x">&times;</span></span>
+                    <span class="chip">Tools <span class="x">&times;</span></span>
+                  </div>
+                </div>
+
+                <!-- Supported Field Types -->
+                <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--gray-200)">
+                  <div style="font-size:0.7rem;font-weight:700;color:var(--gray-500);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.06em">Supported Field Types</div>
+                  <div class="tech-list" style="gap:6px">
+                    <div class="tech-pill" style="padding:5px 10px"><span style="font-size:0.68rem">Text</span></div>
+                    <div class="tech-pill" style="padding:5px 10px"><span style="font-size:0.68rem">Number</span></div>
+                    <div class="tech-pill" style="padding:5px 10px"><span style="font-size:0.68rem">Date</span></div>
+                    <div class="tech-pill" style="padding:5px 10px"><span style="font-size:0.68rem">Select</span></div>
+                    <div class="tech-pill" style="padding:5px 10px"><span style="font-size:0.68rem">Multiselect</span></div>
+                    <div class="tech-pill" style="padding:5px 10px"><span style="font-size:0.68rem">Checkbox</span></div>
+                    <div class="tech-pill" style="padding:5px 10px"><span style="font-size:0.68rem">Radio</span></div>
+                    <div class="tech-pill" style="padding:5px 10px"><span style="font-size:0.68rem">File</span></div>
+                    <div class="tech-pill" style="padding:5px 10px"><span style="font-size:0.68rem">Rich Text</span></div>
+                    <div class="tech-pill" style="padding:5px 10px"><span style="font-size:0.68rem">Textarea</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT: File Management -->
+            <div class="form-card">
+              <div class="form-header">
+                <h4>File Management &mdash; Task Attachments</h4>
+              </div>
+              <div class="form-body">
+                <!-- Section: Task Fix Auth Bug -->
+                <div style="font-size:0.72rem;font-weight:700;color:var(--gray-700);margin-bottom:8px">Task: Fix Auth Bug <span style="font-size:0.62rem;color:var(--gray-400);font-weight:500">(3 files)</span></div>
+                <div class="file-list" style="margin-bottom:14px">
+                  <div class="file-item">
+                    <div style="display:flex;align-items:center">
+                      <span class="file-icon" style="color:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+                      error-report.pdf
+                    </div>
+                    <span class="file-size">2.4 MB</span>
+                  </div>
+                  <div class="file-item">
+                    <div style="display:flex;align-items:center">
+                      <span class="file-icon" style="color:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+                      screenshot.png
+                    </div>
+                    <span class="file-size">1.1 MB</span>
+                  </div>
+                  <div class="file-item">
+                    <div style="display:flex;align-items:center">
+                      <span class="file-icon" style="color:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+                      fix-commit-diff.txt
+                    </div>
+                    <span class="file-size">45 KB</span>
+                  </div>
+                </div>
+
+                <!-- Section: Chat Uploads -->
+                <div style="font-size:0.72rem;font-weight:700;color:var(--gray-700);margin-bottom:8px">Chat Uploads <span style="font-size:0.62rem;color:var(--gray-400);font-weight:500">(2 files)</span></div>
+                <div class="file-list" style="margin-bottom:14px">
+                  <div class="file-item">
+                    <div style="display:flex;align-items:center">
+                      <span class="file-icon" style="color:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+                      error-logs.pdf
+                    </div>
+                    <span class="file-size">2.4 MB</span>
+                  </div>
+                  <div class="file-item">
+                    <div style="display:flex;align-items:center">
+                      <span class="file-icon" style="color:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+                      network-trace.har
+                    </div>
+                    <span class="file-size">1.8 MB</span>
+                  </div>
+                </div>
+
+                <!-- Section: Mail Attachments -->
+                <div style="font-size:0.72rem;font-weight:700;color:var(--gray-700);margin-bottom:8px">Mail Attachments <span style="font-size:0.62rem;color:var(--gray-400);font-weight:500">(1 file)</span></div>
+                <div class="file-list" style="margin-bottom:14px">
+                  <div class="file-item">
+                    <div style="display:flex;align-items:center">
+                      <span class="file-icon" style="color:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+                      sprint5-backlog.xlsx
+                    </div>
+                    <span class="file-size">890 KB</span>
+                  </div>
+                </div>
+
+                <!-- Upload Area -->
+                <div class="upload-area" style="margin-top:10px">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28" style="margin:0 auto 6px"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                  <p>Drop files to upload</p>
+                  <div class="upload-hint">Supported: PDF, PNG, JPG, DOCX, XLSX &mdash; Max 10MB</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="content-panel">
+      <h4>Flexible Data Collection</h4>
+      <p class="content-desc">The Visual Form Builder supports 10+ field types including text, dropdowns, multiselect, date pickers, and file uploads. Files can be attached throughout the system &mdash; in tasks, chat messages, and mail &mdash; with organized management by source.</p>
+      <ul class="slide-highlights">
+        <li>Visual form builder with 10+ field types</li>
+        <li>File uploads in tasks, chat, and mail</li>
+        <li>Organized file management by source</li>
+        <li>PDF, PNG, DOCX, XLSX supported (10MB max)</li>
+        <li>Published/draft form status management</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<nav class="page-nav">
+  <div class="nav-side">
+    <a href="slide13.html" class="nav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M15 18l-6-6 6-6"/></svg> <span class="label-text">Prev</span></a>
+  </div>
+  <div class="nav-dots">
+    <a href="slide1.html" class="nav-dot"></a><a href="slide2.html" class="nav-dot"></a><a href="slide3.html" class="nav-dot"></a><a href="slide4.html" class="nav-dot"></a><a href="slide5.html" class="nav-dot"></a><a href="slide6.html" class="nav-dot"></a><a href="slide7.html" class="nav-dot"></a><a href="slide8.html" class="nav-dot"></a><a href="slide9.html" class="nav-dot"></a><a href="slide10.html" class="nav-dot"></a><a href="slide11.html" class="nav-dot"></a><a href="slide12.html" class="nav-dot"></a><a href="slide13.html" class="nav-dot"></a><a href="slide14.html" class="nav-dot on"></a><a href="slide15.html" class="nav-dot"></a><a href="slide16.html" class="nav-dot"></a>
+  </div>
+  <div class="nav-side" style="justify-content:flex-end">
+    <span class="slide-num">14 / 16</span>
+    <a href="slide15.html" class="nav-btn primary"><span class="label-text">Next</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M9 18l6-6-6-6"/></svg></a>
+  </div>
+</nav>
+</body>
+</html>
